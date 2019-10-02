@@ -1,3 +1,7 @@
+; msim by Farooq Karimi Zadeh <fkz@riseup.net>
+; Copyright (c) 2019 Farooq Karimi Zadeh
+; Under MIT/X11 Licence (see LICENSE)
+
 (defun random-choice (L) (nth (random (length L)) L))
 
 (defun vote (citizens)
