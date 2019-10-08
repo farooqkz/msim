@@ -52,10 +52,10 @@
         (mafia-win 0)
         (townie-win 0))
     (loop
-       for citizens_ = citizens
+       for result = (play-game citizens)
        repeat rounds
        do
-         (case (play-game citizens_)
+         (case result
            ('fool-win (incf fool-win))
            ('townie-win (incf townie-win))
            ('mafia-win (incf mafia-win))))
